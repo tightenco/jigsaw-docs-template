@@ -24,6 +24,7 @@
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.ico">
+        <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
         @stack('meta')
 
@@ -54,6 +55,8 @@
                     @if ($page->docsearchApiKey && $page->docsearchIndexName)
                         @include('_nav.search-input')
                     @endif
+
+                    @include('_nav.upper-menu')
                 </div>
             </div>
 

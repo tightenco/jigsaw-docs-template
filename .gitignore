@@ -3,3 +3,4 @@
 /vendor/
 .DS_Store
 /source/assets/build/
+composer.lock
